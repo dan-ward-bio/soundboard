@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK47 Soundboard UltraSoGood 7000</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  .button {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .center-content {
+    margin: 20px;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="center-content">
+  <img src="ak47.jpeg" alt="Center Image">
+  <h1>Soundboard UltraSoGood 7000</h1>
+  <p></p>
+</div>
+
+<!-- Sound buttons -->
+<div>
+  <button class="button" onclick="playSound('1.mp3')">Sound 1</button>
+  <button class="button" onclick="playSound('2.mp3')">Sound 2</button>
+  <button class="button" onclick="playSound('3.mp3')">Sound 3</button>
+  <button class="button" onclick="playSound('4.mp3')">Sound 4</button>
+  <button class="button" onclick="playSound('5.mp3')">Sound 5</button>
+  <button class="button" onclick="playSound('6.mp3')">Sound 6</button>
+  <button class="button" onclick="playSound('7.mp3')">Sound 7</button>
+  <button class="button" onclick="playSound('8.mp3')">Sound 8</button>
+</div>
+
+<script>
+  function playSound(soundFile) {
+    var audio = new Audio(soundFile);
+    audio.play();
+  }
+</script>
+</body>
+</html>
